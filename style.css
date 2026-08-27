@@ -606,3 +606,11 @@ body:not(.dark) .legend-item {
 body.dark .legend-item {
     color: #e5e7eb !important;
 }
+@media (max-width: 600px) {
+  .dashboard-cards { 
+    flex-direction: column !important; 
+  }
+  body { 
+    font-family: Arial, sans-serif !important; 
+  }
+}
