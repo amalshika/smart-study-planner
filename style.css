@@ -606,11 +606,23 @@ body:not(.dark) .legend-item {
 body.dark .legend-item {
     color: #e5e7eb !important;
 }
-@media (max-width: 600px) {
-  .dashboard-cards { 
-    flex-direction: column !important; 
+/* Mobile Fix - Final */
+@media (max-width: 768px) {
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif !important;
   }
-  body { 
-    font-family: Arial, sans-serif !important; 
+  .container, .main-content, .dashboard {
+    width: 100% !important;
+    overflow-x: hidden !important;
+    padding: 10px !important;
+  }
+  .dashboard-cards, .stats-grid, .overview-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 15px !important;
+  }
+  .card, .stat-card {
+    width: 100% !important;
+    margin-bottom: 10px !important;
   }
 }
