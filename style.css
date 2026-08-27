@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+* {
+  font-family: 'Poppins', Arial, sans-serif !important;
+  font-style: normal !important;
+}
 all shedule are coming in one line i want to come in horizontal different rows
 
 /* ================= ROOT VARIABLES ================= */
@@ -625,4 +630,11 @@ body.dark .legend-item {
     width: 100% !important;
     margin-bottom: 10px !important;
   }
+}
+/* Force mobile layout fix */
+div[style*="display: flex"], .weekly-schedule, .upcoming-card {
+  flex-wrap: wrap !important;
+  height: auto !important;
+  min-height: auto !important;
+  overflow: visible !important;
 }
